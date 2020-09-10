@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "ma-gym"
+version = "0.0.1"
+description = "A collection of multi agent environments based on OpenAI gym."
+authors = ["Anurag Koul <koulanurag@gmail.com>", "Jan Uhlík <jan@uhlik.me>"]
+maintainers = ["Jan Uhlík <jan@uhlik.me>"]
+readme = "README.md"
+license = "Apache License 2.0"
+repository = "https://gitlab.com/uhlajs/ma-gym"
+keywords = ["Reinforcement Learning",
+            "Multiagent Systems",
+            "Deep Learning"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+gym = "^0.17.2"
+numpy = "^1.19.1"
+Pillow = "^7.2.0"
+scipy = "^1.5.2"
+
+[tool.poetry.dev-dependencies]
+autopep8 = "*"
+pylint = "*"
+jedi = "*"
+rope = "*"
+flake8 = "*"
+ipython = "*"
+ipykernel = "*"
+ipdb = "*"
+pytest = "^6.0.1"
+pytest_cases = "^2.2.2"
+imageio = "^2.9.0"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
